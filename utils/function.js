@@ -30,10 +30,9 @@ export const tools = [
   }
 ];
 
-// These are the actual implementations
 export async function callFunction(name, args) {
   if (name === "getWeather") {
-    return `It's sunny in ${args.city}.`; // dummy response
+    return `It's sunny in ${args.city}.`; 
   }
   if (name === "summarizeText") {
     return `Summary: ${args.text.slice(0, 50)}...`;
